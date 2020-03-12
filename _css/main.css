@@ -1,0 +1,317 @@
+footer, header, section {
+    display: block
+}
+
+html, body, h1, ul, ul li, footer p {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+html, input, textarea, kbd, samp {
+    font: 14px/1.4 Helvetica, Arial
+}
+
+html {
+    background: #3d3d3d
+}
+
+body {
+    width: 840px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 20px 40px;
+    -moz-box-shadow: 0 0 2em #000;
+    -webkit-box-shadow: 0 0 2em #000;
+    box-shadow: 0 0 2em #000
+}
+
+a {
+    text-decoration: none;
+    padding: 2px 1px 0;
+    border-bottom: 1px solid #d3d3d3;
+    color: #000
+}
+
+a:hover, a:focus {
+    border-color: #3d3d3d
+}
+
+textarea, #result, input {
+    width: 828px;
+    height: 100px;
+    border: 1px solid #3d3d3d;
+    padding: 5px
+}
+
+#result {
+    background: #ffffe0
+}
+
+samp {
+    border-left: .4em solid #aaa;
+    padding-left: .7em
+}
+
+input {
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: -7px;
+    background: #3d3d3d;
+    color: #d3d3d3
+}
+
+input:focus, input:hover {
+    background: #d3d3d3;
+    color: #3d3d3d
+}
+
+.js input {
+    display: none
+}
+
+#about, #about samp, #about kbd, footer {
+    font-size: 14px
+}
+
+.js #about > * {
+    display: none
+}
+
+.js #about h1 {
+    display: block
+}
+
+ul li {
+    display: inline
+}
+
+ul li::after {
+    content: ', '
+}
+
+ul li:last-child::after {
+    content: '.'
+}
+
+section {
+    width: 100%;
+    overflow: hidden
+}
+
+.hidden h1 {
+    color: #666
+}
+
+h1, textarea, p, #keyboard, ul {
+    margin: 0 0 1em
+}
+
+footer {
+    margin-top: 1em;
+    clear: both
+}
+
+header h1 {
+    font-size: 22px
+}
+
+section h1 {
+    font-size: 16px
+}
+
+ol, ol li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ol {
+    display: block;
+    clear: both;
+    position: relative;
+    width: 840px
+}
+
+ol kbd {
+    font-family: 'VAG Rounded', 'Century Gothic', Arial;
+    font-size: 12px
+}
+
+ol li {
+    float: left;
+    background: #000;
+    border: 2px solid #aaa;
+    padding: 2px 7px 1px;
+    color: #fff;
+    text-align: center;
+    width: 39px;
+    height: 47px;
+    line-height: 45px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition-property: border, color;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease-in-out
+}
+
+#row-1 li {
+    width: 40px;
+    height: 20px;
+    line-height: 18px
+}
+
+#row-2 li.delete {
+    width: 53px
+}
+
+#row-3 li.tab {
+    width: 53px
+}
+
+#row-4 li.caps-lock {
+    width: 63px
+}
+
+#row-4 li.return {
+    width: 88px
+}
+
+#row-5 li.shift {
+    width: 105px
+}
+
+#row-6 li {
+    width: 36px
+}
+
+#row-6 li.cmd {
+    width: 46px
+}
+
+#row-6 li.space {
+    width: 300px
+}
+
+#row-6 li.up, #row-6 li.right, #row-6 li.down, #row-6 li.left {
+    position: absolute;
+    height: 20px;
+    line-height: 18px;
+    right: 0;
+    top: 27px
+}
+
+#row-6 li.up {
+    top: 0;
+    right: 54px
+}
+
+#row-6 li.down {
+    right: 54px
+}
+
+#row-6 li.left {
+    right: 108px
+}
+
+ol li.clickable {
+    cursor: pointer;
+    color: #3c3
+}
+
+ol li:hover, ol li:focus {
+    border-color: #090;
+    color: #d3d3d3
+}
+
+.js #keyboard {
+    margin-top: 1em
+}
+
+html#ios {
+    -webkit-text-size-adjust: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d0d0), to(#a7a7a7));
+    min-height: 100%
+}
+
+html#ios, #ios input, #ios textarea, #ios kbd, #ios samp {
+    font-size: 18px
+}
+
+#ios body {
+    width: 98%;
+    margin: 0;
+    padding: 0 2%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent
+}
+
+#ios textarea, #ios #result, #ios input {
+    width: 95%;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+
+#ios #keyboard {
+    zoom: 33%;
+    width: 100%
+}
+
+#ios ol {
+    width: 850px
+}
+
+#ios #keyboard ol kbd {
+    font-size: 6px
+}
+
+#ios iframe {
+    width: 100% !important
+}
+
+#ios #copy {
+    overflow: hidden;
+    margin: 13px auto 0;
+    width: 100%
+}
+
+#ios #copy div {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+    margin-right: 4px;
+    border: 1px solid #d3d3d3;
+    width: 20px;
+    height: 20px;
+    padding: 10px 10px 8px;
+    margin: 0 5px 13px;
+    font-size: 25px;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, .8) 0 1px 0;
+    border: 1px solid #777;
+    color: #000;
+    background: #fff
+}
+
+#ios #copy p {
+    margin: 0
+}
+
+#ios footer {
+    margin: 0 8px 1em;
+    text-shadow: 1px 1px 1px #999
+}
+
+#ios footer a {
+    color: #222;
+    border-color: #222
+}

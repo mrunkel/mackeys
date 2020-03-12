@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MacKeys: a tool to convert Apple Mac keys to their single-Unicode-character equivalents</title>
+  <link href="/_css/main.css" rel="stylesheet">
+  <meta name="description"
+        content="Online tool to convert Apple Mac keys to their single-Unicode-character equivalents. Also, iOS Emoji and a QWERTY MacBook keyboard in CSS3!">
+  <script>document.documentElement.className = 'js';</script>
+</head>
+<header>
+  <h1>Convert Apple Mac keys to their single-Unicode-character equivalents</h1>
+</header>
+<body>
+<section id="about">
+  <h1>About</h1>
+  <p>This tool converts easy-to-type textual descriptions of keyboard keys into the Unicode characters representing
+    those keys. For instance, entering the following:</p>
+  <p><samp>Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd> to take a screenshot.</samp></p>
+  <p>…would return…</p>
+  <p><samp>Press <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>4</kbd> to take a screenshot</samp>.</p>
+  <p>This can be useful for tweets, where every character counts. Personally, I use it because it looks better.</p>
+  <p>An iPhone-optimized version of this page is available. To view it, just visit this page using an iPhone.</p>
+  <p>Here’s a list of all supported keys:</p>
+  <ul>
+    <li><kbd>Page Up</kbd></li>
+    <li><kbd>PageUp</kbd></li>
+    <li><kbd>PgUp</kbd></li>
+    <li><kbd>Page Down</kbd></li>
+    <li><kbd>PageDown</kbd></li>
+    <li><kbd>PgDown</kbd></li>
+    <li><kbd>Home</kbd></li>
+    <li><kbd>End</kbd></li>
+    <li><kbd>Alternative</kbd></li>
+    <li><kbd>Alt</kbd></li>
+    <li><kbd>Apple</kbd></li>
+    <li><kbd>Caps Lock</kbd></li>
+    <li><kbd>Caps</kbd></li>
+    <li><kbd>Cmd</kbd></li>
+    <li><kbd>Command</kbd></li>
+    <li><kbd>Control</kbd></li>
+    <li><kbd>Ctrl</kbd></li>
+    <li><kbd>Down Arrow</kbd></li>
+    <li><kbd>Down</kbd></li>
+    <li><kbd>Eject</kbd></li>
+    <li><kbd>Enter</kbd></li>
+    <li><kbd>Escape</kbd></li>
+    <li><kbd>Esc</kbd></li>
+    <li><kbd>Left Arrow</kbd></li>
+    <li><kbd>Left</kbd></li>
+    <li><kbd>Num Lock</kbd></li>
+    <li><kbd>Option</kbd></li>
+    <li><kbd>Return</kbd></li>
+    <li><kbd>Right Arrow</kbd></li>
+    <li><kbd>Power</kbd></li>
+    <li><kbd>Right</kbd></li>
+    <li><kbd>Shift</kbd></li>
+    <li><kbd>Space</kbd></li>
+    <li><kbd>Tab Forward</kbd></li>
+    <li><kbd>Tab Back</kbd></li>
+    <li><kbd>Tab</kbd></li>
+    <li><kbd>Up Arrow</kbd></li>
+    <li><kbd>Up</kbd></li>
+  </ul>
+</section>
+<section id="convert">
+  <h1>Convert</h1>
+  <p><label for="q">Just type something here:</label></p>
+  <form action="" method="post">
+    <textarea name="q" id="q">Press Option + Control + Command + 8 to invert or revert the screen colors</textarea>
+    <input type="submit" value="Convert">
+    <p>And view the result here:</p>
+    <p id="result">Press ⌥ + ⌃ + ⌘ + 8 to invert or revert the screen colors</p>
+  </form>
+</section>
+<section id="keyboard">
+  <h1>MacBook QWERTY keyboard in <abbr title="Cascading Style Sheets, Level 3">CSS3</abbr></h1>
+  <ol id="row-1">
+    <li data-key="Escape"><kbd>esc</kbd></li>
+    <li><kbd>F1</kbd></li>
+    <li><kbd>F2</kbd></li>
+    <li><kbd>F3</kbd></li>
+    <li><kbd>F4</kbd></li>
+    <li><kbd>F5</kbd></li>
+    <li><kbd>F6</kbd></li>
+    <li><kbd>F7</kbd></li>
+    <li><kbd>F8</kbd></li>
+    <li><kbd>F9</kbd></li>
+    <li><kbd>F10</kbd></li>
+    <li><kbd>F11</kbd></li>
+    <li><kbd>F12</kbd></li>
+    <li data-key="Eject" title="Eject"><kbd>⏏</kbd></li>
+  </ol>
+  <ol id="row-2">
+    <li><kbd>`</kbd></li>
+    <li><kbd>1</kbd></li>
+    <li><kbd>2</kbd></li>
+    <li><kbd>3</kbd></li>
+    <li><kbd>4</kbd></li>
+    <li><kbd>5</kbd></li>
+    <li><kbd>6</kbd></li>
+    <li><kbd>7</kbd></li>
+    <li><kbd>8</kbd></li>
+    <li><kbd>9</kbd></li>
+    <li><kbd>0</kbd></li>
+    <li><kbd>-</kbd></li>
+    <li><kbd>=</kbd></li>
+    <li class="delete"><kbd>delete</kbd></li>
+  </ol>
+  <ol id="row-3">
+    <li class="tab" data-key="Tab"><kbd>tab</kbd></li>
+    <li><kbd>Q</kbd></li>
+    <li><kbd>W</kbd></li>
+    <li><kbd>E</kbd></li>
+    <li><kbd>R</kbd></li>
+    <li><kbd>T</kbd></li>
+    <li><kbd>Y</kbd></li>
+    <li><kbd>U</kbd></li>
+    <li><kbd>I</kbd></li>
+    <li><kbd>O</kbd></li>
+    <li><kbd>P</kbd></li>
+    <li><kbd>[</kbd></li>
+    <li><kbd>]</kbd></li>
+    <li><kbd>\</kbd></li>
+  </ol>
+  <ol id="row-4">
+    <li data-key="Caps Lock" class="caps-lock"><kbd>caps lock</kbd></li>
+    <li><kbd>A</kbd></li>
+    <li><kbd>S</kbd></li>
+    <li><kbd>D</kbd></li>
+    <li><kbd>F</kbd></li>
+    <li><kbd>G</kbd></li>
+    <li><kbd>H</kbd></li>
+    <li><kbd>J</kbd></li>
+    <li><kbd>K</kbd></li>
+    <li><kbd>L</kbd></li>
+    <li><kbd>;</kbd></li>
+    <li><kbd>'</kbd></li>
+    <li data-key="Return" class="return"><kbd>return</kbd></li>
+  </ol>
+  <ol id="row-5">
+    <li data-key="Shift" class="shift"><kbd>shift</kbd></li>
+    <li><kbd>Z</kbd></li>
+    <li><kbd>X</kbd></li>
+    <li><kbd>C</kbd></li>
+    <li><kbd>V</kbd></li>
+    <li><kbd>B</kbd></li>
+    <li><kbd>N</kbd></li>
+    <li><kbd>M</kbd></li>
+    <li><kbd>,</kbd></li>
+    <li><kbd>.</kbd></li>
+    <li><kbd>/</kbd></li>
+    <li data-key="Shift" class="shift"><kbd>shift</kbd></li>
+  </ol>
+  <ol id="row-6">
+    <li class="fn"><kbd>fn</kbd></li>
+    <li data-key="Ctrl"><kbd>ctrl</kbd></li>
+    <li data-key="Option"><kbd>option</kbd></li>
+    <li data-key="Cmd" class="cmd"><kbd>⌘</kbd></li>
+    <li data-key="Space" class="space"><kbd>&nbsp;</kbd></li>
+    <li data-key="Cmd" class="cmd"><kbd>⌘</kbd></li>
+    <li data-key="Enter" class="enter"><kbd>enter</kbd></li>
+    <li data-key="Up" class="up"><kbd>↑</kbd></li>
+    <li data-key="Left" class="left"><kbd>←</kbd></li>
+    <li data-key="Down" class="down"><kbd>↓</kbd></li>
+    <li data-key="Right" class="right"><kbd>→</kbd></li>
+  </ol>
+</section>
+<footer>
+  <p>Made by <a href="http://mathiasbynens.be/" title="Mathias Bynens, front-end developer">Mathias</a> at <a
+          href="qiwi.be/" hreflang="nl" title="Qiwi webdesign Dendermonde">Qiwi</a>, because I ♥ Unicode. Suggestions
+    welcome <a href="http://twitter.com/mathias" title="@mathias on Twitter" rel="nofollow">via Twitter: @mathias</a>.
+  </p>
+</footer>
+<script src="_js/all.js?2"></script>
+</body>
+</html>
