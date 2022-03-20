@@ -7,9 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+    
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -44,14 +42,14 @@ jobs:
           # your sftp server
           server: traefik.runkel.org
           # your sftp server port, default to 22
-          port: # default is 22
+          port: 22 # default is 22
           # you can copy private_key from your *.pem file, keep format
           ssh_private_key: 
           # will put all file under this path
-          local_path: # default is ./*
+          local_path: $GITHUB_WORKSPACE
           # files will copy to under remote_path
           remote_path: /var/www/mackeys.runkel.org/
           # connection via sftp protocol only
-          sftp_only: # optional
+          sftp_only: true # optional
           # sftp args
-          args: # optional
+          # args: # optional
