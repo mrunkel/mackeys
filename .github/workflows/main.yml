@@ -17,7 +17,6 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-  deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -35,3 +34,24 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: SFTP Deploy
+        # You may pin to the exact commit or the version.
+        # uses: wlixcc/SFTP-Deploy-Action@c6e4d76ad92d7460e93fc66178b52638298adfaa
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.2
+        with:
+          # username
+          username: root
+          # your sftp server
+          server: traefik.runkel.org
+          # your sftp server port, default to 22
+          port: # default is 22
+          # you can copy private_key from your *.pem file, keep format
+          ssh_private_key: 
+          # will put all file under this path
+          local_path: # default is ./*
+          # files will copy to under remote_path
+          remote_path: /var/www/mackeys.runkel.org/
+          # connection via sftp protocol only
+          sftp_only: # optional
+          # sftp args
+          args: # optional
